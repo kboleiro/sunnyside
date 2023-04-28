@@ -1,0 +1,272 @@
+:root {
+    --cor0: white;
+    --cor01: #23303e;
+    --cor02: #818498;
+    --cor03: #FF8F02;
+    --cor04: #255c57; 
+    --cor05: #3dbeff;
+}
+@font-face {font-family: Fraunces;src: url(fontes/Fraunces-ExtraBold.ttf);}
+@font-face {font-family: Barlow;src: url(fontes/Barbow/BarlowCondensed-SemiBold.ttf);}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+body { overflow-x: hidden;}
+/*<-HEADER->*/
+header {
+    background: url(sunnyside-agency-landing-page-main-main/images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    padding: 0 1rem 0;
+}
+header nav {display: flex;list-style: none;}
+header h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 130px;
+    color: var(--cor0);
+    letter-spacing: 4px;
+    font-size: bolder;
+}
+div#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+#men {
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: 2em;
+}
+.link:hover {
+    transform: scale(1.05);
+    display: block;
+}
+
+a#Contato {
+    background-color: white;
+    color: black;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+header li {margin: 0 15px;}
+header li:first-child {margin-left: 0px;}
+header li :last-child{margin-right: 0px;}
+header li a { color: white;}
+img#logosunny {width: 15%;height: 13%;}
+img#fundo {width: 100%;}
+img#seta{margin: auto; display: block; max-width: 100%; margin-top: 69px;}
+
+/*MAIN */
+/*imagens1 */
+div.container {
+    height: 600px;
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+div.app {
+    width: 400px;
+    padding-left: 100px;
+    position: relative;
+    background-position: center;
+}
+h2.subtitulo {
+    text-align: left;
+    font-family: 'Fraunces';
+    color:var(--cor01);
+    font-size: 40px;
+    padding-top: 170px;
+    letter-spacing: 1.5px;
+}
+p.info {
+    font-family: barlow;
+    font-size: 20px;
+    color:var(--cor01);
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+p.saiba-mais {padding-top: 50px;font-family: 'Fraunces';}
+div#img {
+    width: 675px;
+    max-width: 46.6%;
+    position: relative;
+    background-position: center;}
+div#acerola {
+    position: relative;
+    background-position: center;
+}
+h2.textofundo {
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Fraunces;
+    color: var(--cor01);
+}
+p.textofundo {
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 40%;
+    transform: translate(-35%, -35%);
+    font-family: barlow;
+    font-size: 25px;
+    color:var(--cor04);
+    text-align: center;
+}
+
+/*clientes*/
+div#clientes {display: flex;justify-content: space-around;}
+div.pefil {
+    width: 300px;
+    height: 270px;
+    align-items: center;
+}
+img.foto {
+    border-radius: 50%;
+    width: 4rem;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
+}
+p.clientes {
+    margin-top: 10px;
+    font-family: barlow;
+    font-size: 20px;
+    color:var(--cor02);
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    text-align: center;
+}
+h3.pessoa {
+    font-family: Fraunces;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--cor01);
+    margin-top: 10px;
+}
+p.prof {
+    margin-top: 10px;
+    font-family: barlow;
+    font-size: 20px;
+    color:var(--cor02);
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+section#c > h2 {
+    text-align: center;
+    font-family: Fraunces;
+    padding: 8px;
+    letter-spacing: 3px;
+    color: var(--cor01);
+}
+/*imagens2*/
+div#artes {display: flex;}
+div#artes img {
+    float: left;
+    width: 25%;
+    height: auto;
+    background-position: center;
+}
+
+
+/*Footer */
+footer {background-color: var(--cor05);height: 160px;}
+footer ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer ul li {
+    margin-right: 10px;
+    color: var(--cor01);
+    font-family: Barlow;
+    font-size: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+img#logo {
+    width: 15%;
+    height: 19%;
+    display: block;
+    margin: auto;
+}
+div#redes-sociais {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ion-icon {
+    margin-right: 20px;
+    color: var(--cor0);
+    font-size: 30px;
+    padding: 10px;
+}
+p#footer {
+    text-align: center;
+    bottom: 0;
+    font-family: Barlow;
+    color: var(--cor01);
+}
+p#footer  a {text-decoration: none;color: var(--cor0);}
+
+@media (max-width: 768px) {
+body {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+  flex-direction: column;
+   text-align: center;
+   margin-bottom: 40px;
+   margin-bottom: 10px;
+    }
+#ovo {
+    position:relative;
+    z-index: 1;
+    top: -50%;
+}
+div.app {
+    width: 400px;
+    padding-left: 120px;
+    position: relative;
+    background-position: center;
+}
+
+#img {
+    position: relative;
+}
+
+#copo {
+    padding-top: 436px
+}
+div#acerola {
+    padding-top: 841px;
+}
+section#c {
+    padding-top: 846px;
+}
+img#fruta {
+    padding-top: 10px;
+}
+img#laranja {
+    padding-top: 10px
+}
+
+
+
+
+}
